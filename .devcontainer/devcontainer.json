@@ -2,7 +2,12 @@
 {
   "name": "Python 3",
   // use the latest python image
-  "image": "mcr.microsoft.com/devcontainers/python3.11-bullseye"
+  "image": "mcr.microsoft.com/devcontainers/python3",
+  "features": {
+    "ghcr.io/devcontainers/features/python:1": {
+      "version": "3.11.9"
+    }
+}
   // install libs after the creation of the environement 
   // by using a simple bash command
   //"postCreateCommand": "python -m pip install nox pre-commit && pre-commit install"
